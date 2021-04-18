@@ -3,10 +3,11 @@ let db;
 if(process.env.DATABASE_URL)
 {
     db=new Sequelize(process.env.DATABASE_URL)
+    
 }
 else
 {
-     db = new Sequelize('shopdb', 'shopper', 'shoppass', {
+    db = new Sequelize('shopdb', 'shopper', 'shoppass', {
         host: 'localhost',
         dialect: 'mysql',
         pool: {
