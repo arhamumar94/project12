@@ -1,6 +1,6 @@
 const express =require('express')
 const path =require('path')
-const {db} =require('./db/models')
+const {db} =require('./db')
 const app=express();
 const PORT=process.env.PORT||2678;
 app.use(express.json())
